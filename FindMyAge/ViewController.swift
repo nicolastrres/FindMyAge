@@ -1,25 +1,23 @@
-//
-//  ViewController.swift
-//  FindMyAge
-//
-//  Created by Nicolas Agustin on 15/03/18.
-//  Copyright © 2018 Nicolas Agustin. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+
+    @IBOutlet weak var lblAge: UILabel!
+    @IBOutlet weak var txtBirthdate: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func calculateAge(birthdate: Int, currentYear: Int) -> Int {
+        return currentYear - birthdate
     }
 
-
+    @IBAction func btnCalculate(_ sender: Any) {
+        let birthdate = Int(txtBirthdate.text!)
+        let currentYear = Calendar.current.component(.year, from: Date())
+        lblAge.text = String(calculateAge(birthdate: birthdate!, currentYear: currentYear))
+    }
 }
 
