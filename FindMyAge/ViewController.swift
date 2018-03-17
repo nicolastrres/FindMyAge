@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBAction func btnCalculate(_ sender: Any) {
         let birthdate = Int(txtBirthdate.text!)
         let currentYear = Calendar.current.component(.year, from: Date())
-        lblAge.text = String(calculateAge(birthdate: birthdate!, currentYear: currentYear))
+        lblAge.text = "Your age is \(String(calculateAge(birthdate: birthdate!, currentYear: currentYear)))"
     }
 }
 
