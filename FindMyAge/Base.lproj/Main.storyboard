@@ -19,40 +19,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your age is ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTm-bF-wZx">
-                                <rect key="frame" x="2" y="184" width="371" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="2" y="354" width="371" height="32.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert your birthdate ..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p1W-QU-Gbl">
-                                <rect key="frame" x="2" y="84" width="371" height="50"/>
+                                <rect key="frame" x="10" y="244" width="355" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="fnZ-dT-wy6"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="694-FB-rpB">
-                                <rect key="frame" x="20" y="238" width="335" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Calculate"/>
+                                <rect key="frame" x="100" y="486.33333333333331" width="175" height="44.999999999999943"/>
+                                <color key="backgroundColor" red="0.86222878886010368" green="0.37235445164923969" blue="0.26865991968721142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="btnCalculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q4y-Tv-Prs"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.46230726322541893" blue="0.26088321430911821" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fTm-bF-wZx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="2" id="28H-YS-AEX"/>
-                            <constraint firstItem="fTm-bF-wZx" firstAttribute="top" secondItem="p1W-QU-Gbl" secondAttribute="bottom" constant="50" id="6GF-1G-zVL"/>
-                            <constraint firstItem="p1W-QU-Gbl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="2" id="GSr-qe-Dif"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="694-FB-rpB" secondAttribute="trailing" constant="20" id="LUm-5j-VlD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p1W-QU-Gbl" secondAttribute="trailing" constant="2" id="RR1-8k-b1f"/>
-                            <constraint firstItem="694-FB-rpB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WsU-K2-RsH"/>
+                            <constraint firstItem="fTm-bF-wZx" firstAttribute="top" secondItem="p1W-QU-Gbl" secondAttribute="bottom" constant="60" id="6GF-1G-zVL"/>
+                            <constraint firstItem="p1W-QU-Gbl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="GSr-qe-Dif"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="694-FB-rpB" secondAttribute="trailing" constant="100" id="LUm-5j-VlD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p1W-QU-Gbl" secondAttribute="trailing" constant="10" id="RR1-8k-b1f"/>
+                            <constraint firstItem="694-FB-rpB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="WsU-K2-RsH"/>
                             <constraint firstAttribute="trailing" secondItem="fTm-bF-wZx" secondAttribute="trailing" constant="2" id="eq3-yh-F7q"/>
-                            <constraint firstItem="p1W-QU-Gbl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="fFy-3K-UCR"/>
-                            <constraint firstItem="694-FB-rpB" firstAttribute="top" secondItem="fTm-bF-wZx" secondAttribute="bottom" constant="30" id="obQ-D6-Prc"/>
+                            <constraint firstItem="p1W-QU-Gbl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="fFy-3K-UCR"/>
+                            <constraint firstItem="694-FB-rpB" firstAttribute="top" secondItem="fTm-bF-wZx" secondAttribute="bottom" constant="100" id="obQ-D6-Prc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
